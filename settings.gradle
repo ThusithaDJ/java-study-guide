@@ -1,3 +1,4 @@
 rootProject.name = 'java-study-guide'
 include 'threads'
+include 'patterns'
 
