@@ -1,4 +1,4 @@
-package design.pattern.creational.abstractfactory;
+package creational.AbstractFactory;
 
 public abstract class Validator {
 

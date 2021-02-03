@@ -24,3 +24,11 @@ j
 :threads/src/main/java/threads/synchronize/BankAccount.java,3\5\35906432e11ca1cd640871fe6db031a60d617e54
 c
 3threads/src/main/java/threads/synchronize/Main.java,4\2\429a1831bedc194748038fe0a201a01673c03be5
+E
+patterns/build.gradle,3\a\3a9687fb214a797938bf8c8e8c2cf77cc86ab22f
+a
+1src/main/java/creational/singleton/TestClass.java,9\d\9da4c1fabb4e18ef744c2152915d209963cffc3c
+g
+7src/main/java/creational/singleton/SingletonClient.java,1\8\1844ed4d116d961f8701649c1c0dfd74e6ad4f3d
+\
+,src/main/java/creational/prototype/Item.java,2\1\21ce0c1ef151165170248ad639f2c6626ad8ee05

@@ -22,7 +22,7 @@ public class Mother implements Runnable {
 		for (int i = 0; i < 10; i++) {
 			try {
 				double balance = account.deposite(5000);
-				System.out.println(Thread.currentThread().getName() + " " + this.name +  " after deposite of 5000 account balance: "+balance);
+				System.out.println(Thread.currentThread().getName() + " " + this.name +  " after deposite of 5000 account balance: "+balance + " record count: "+ account.getAmountList().size());
 				Thread.sleep(1000);
 			} catch (Exception e) {
 				System.out.println("Interrupted while sleeping");

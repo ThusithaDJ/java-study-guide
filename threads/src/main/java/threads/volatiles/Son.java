@@ -20,7 +20,7 @@ public class Son implements Runnable {
 		for (int i = 0; i < 10; i++) {
 			try {
 				double balance = account.withdraw(5000);
-				System.out.println(Thread.currentThread().getName() + " " + this.name + " after withdraw of 5000 account balance: "+balance);
+				System.out.println(Thread.currentThread().getName() + " " + this.name + " after withdraw of 5000 account balance: "+balance + " record count: "+ account.getAmountList().size());
 				Thread.sleep(1000);
 			} catch(IllegalArgumentException e) {
 				System.out.println(e.getMessage());
