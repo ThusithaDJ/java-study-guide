@@ -1,3 +1,7 @@
 
+‚
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(­¤ÒÌ8âÿÂòö.
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8âÿÂòö.
 ?
-java:S1068")Remove this unused "accNo" private field.(œ…Ë
+java:S1068	")Remove this unused "accNo" private field.(œ…Ë

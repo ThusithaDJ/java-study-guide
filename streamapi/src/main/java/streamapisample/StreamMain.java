@@ -29,6 +29,7 @@ public class StreamMain {
         collect1.forEach(val -> System.out.printf("%d ", val));
         System.out.println();
 
+
         Set<String> stringSet = new HashSet<>();
         stringSet.add("cde");
         stringSet.add("def");
@@ -78,6 +79,9 @@ public class StreamMain {
         System.out.println("==================== TreeSet numbers ===================");
         numberSet.forEach(number -> System.out.printf("%d, ", number));
         System.out.println();
+
+
+        numberSet.forEach(number -> System.out.printf("%d, ", number));
 
     }
 

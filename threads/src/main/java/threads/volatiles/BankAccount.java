@@ -8,13 +8,13 @@ public class BankAccount {
 
 	private String accNo;
 	private volatile double balance;
-	private List<Double> amountList;
+	private Vector<Double> amountList;
 	
 	public BankAccount(String accNo, double balance) {
 		super();
 		this.accNo = accNo;
 		this.balance = balance;
-		amountList = new ArrayList<>();
+		amountList = new Vector<>();
 	}
 	
 	public double deposite(double amount) {
@@ -24,14 +24,19 @@ public class BankAccount {
 	}
 	
 	public double withdraw(double amount) {
+		amountList.add(-amount);
 		if (amount <= balance) {
 			balance -= amount;
-			amountList.add(-amount);
 		} else {
 			throw new IllegalArgumentException("Insuficient funds");
 		}
 		return this.balance;
 	}
+
+	public double getBalance() {
+		return this.balance;
+	}
+
 	public List<Double> getAmountList() {
 		return this.amountList;
 	}

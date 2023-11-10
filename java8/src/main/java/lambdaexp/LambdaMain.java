@@ -2,7 +2,7 @@ package lambdaexp;
 
 public class LambdaMain {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         /*
         Without Lambda
         new Employee(new RelationshipStatus() {
@@ -12,6 +12,7 @@ public class LambdaMain {
             }
         });
         */
+        System.out.println("hello");
         Employee employee = new Employee(() -> "Complicated");
         System.out.println(employee.getRelationshipStatusAsString());
 
@@ -36,5 +37,11 @@ public class LambdaMain {
             return isLoyal ? "Married" : "Single";
         });
         System.out.println(marriedMan.getRelationshipStatusAsString());
+
+
+//        Exception handling
+        Employee ee = new Employee(() -> {
+            throw new RuntimeException("sdfsdfa");
+        });
     }
 }

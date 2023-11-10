@@ -11,4 +11,8 @@ public class Employee {
     public String getRelationshipStatusAsString() {
         return status.getStatus();
     }
+
+    public Employee(ExceptionTest ex) throws Exception {
+        ex.theMethod();
+    }
 }
